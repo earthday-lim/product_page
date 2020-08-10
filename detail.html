@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/detail.js"></script>
+</head>
+<body>
+    <header></header>
+    
+    <section id="detail">
+        <div class="pd_left">
+            <div class="pd_img"><img src="img/best1-1.jpg" alt=""></div>
+        </div>
+        <div class="pd_right">
+            <div class="pd_info">
+                <div class="pd_title">
+                    <h3>등심 스테이크 Set</h3>
+                </div>
+                <div class="pd_price"><span>29,900</span>원</div><!-- 돈 단위붙이는 코드? -->
+                <div class="pd_option">
+                    <select name="" id="sel_opt">
+                        <option value="0" selected>옵션을 선택하세요</option>
+                        <option value="10000">샐러드 추가&nbsp;(+10,000원)</option>
+                        <option value="5000">디저트 추가&nbsp;(+5,000원)</option>
+                    </select>
+                </div>
+                <div class="pd_count">
+                    <div class="pd_count_title">구매수량</div>
+                    <div class="pd_count_box">
+                        <a href="#">－</a>
+                        <input type="text" value="1" readonly>
+                        <a href="#">＋</a>
+                    </div>
+                </div>
+
+                <div class="total_price">
+                    <p class="total_price_title">총 상품 금액</p>
+                    <p class="total_price_num"><span>29,900</span>원</p>
+                </div>
+                <div class="pd_btn">
+                    <ul>
+                        <li><input type="submit" value="구매하기"></li>
+                        <li><input type="submit" value="장바구니"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="dark"></div>
+
+    <div class="mycart">
+        <div class="mycart_frame">
+            <h3>MY CART <span class="close_btn">×</span></h3>
+            <ul class="cart_list">
+                <li>
+                    <div class="top_list">
+                        <div class="cart_img"><img src="" alt=""></div>
+                        <div class="cart_info">
+                            <h4>제품타이틀</h4>
+                            <p class="buy_price"><span>10,000</span>원</p>
+                        </div>
+                    </div>
+                    <div class="bottom_list">
+                        <p>옵션 : <span>000음식 추가</span></p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cart_btn">
+                <li><input type="submit" value="구매하기"></li>
+                <li><input type="submit" value="취소하기"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
